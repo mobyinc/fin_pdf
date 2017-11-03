@@ -1,0 +1,16 @@
+{
+  "name": "fin_pdf",
+  "version": "1.0.0",
+  "description": "HTML to PDF API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Jacoby",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "html-pdf": "^2.2.0"
+  }
+}
