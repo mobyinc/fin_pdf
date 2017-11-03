@@ -11,7 +11,7 @@ app.post('/html_png', function (req, res) {
 
   pdf.create(html, { type: 'png' }).toBuffer(function (err, buffer) {
     if (err) {
-      res.send("error");
+      res.send("error: " + err);
     } else {
       res.send(buffer);
     }
@@ -24,7 +24,7 @@ app.post('/html_pdf', function (req, res) {
 
   pdf.create(html, { type: 'pdf' }).toBuffer(function (err, buffer) {
     if (err) {
-      res.send("error");
+      res.send("error: " + err);
     } else {
       res.send(buffer);
     }
